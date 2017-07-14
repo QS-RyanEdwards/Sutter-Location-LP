@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Find Good Primary Care</title>
+    <meta name="description" content="Test description for screenreaders">
+    <meta name="keywords" content=" ">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bundle.min.css" />
+  </head>
+  <body>
+    <div id="page-top"></div>
+    <!-- Main Menu -->
+    <nav id="main-menu" class="navbar navbar-default navbar-fixed-top topnavbar" style="display: block;">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Logo -->
+          <a class="navbar-brand" href="http://www.sutterhealth.org" target="_blank" aria-label="Link to Sutter Health homepage">
+            <img src="assets/images/logos/sutter-logo.gif" alt="Sutter Health Logo" class="">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- phone # -->
+          <div class="navPHN sutter-phone">
+            <a href="tel:8004931372" rel="nofollow">Call Sutter: (800) 493-1372</a>
+          </div>
+        </div>
+        <!-- /.navbar-collapse c -->
+      </div>
+    </nav>
+    <!-- end here -->
+    <div class="container-fluid ">
+      <div class="imgHeroRow row">
+        <div id="hero" role="img" aria-label="Older couple hugging" class="imgHero holderjs small">
+        </div>
+        <div class="imgHeroHeadlineLeft " style="color:#fff;">
+          <h1>Care that's close to home</h1>
+          <p>Live your life to the fullest with care you can count on.</p>
+          <p>
+            <a href="http://www.sutterhealth.org/findadoctor/index.html" class="btn custom-btn btnPrimaryOrange find-your-doctor-link" tabindex="0" target="_blank">
+                  Find Your Doctor
+                </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Map and Intro -->
+    <div class="container-fluid mapBackground">
+      <div class="container marginBottomQuarter textCenter introRow">
+        <!-- flex row -->
+        <div class=" rowFlex ">
+          <div class=" col-md-12-flex noPad">
+            <div class="columnFlex  ">
+              <!-- this picks which version of the  flexItem gets used -->
+              <!-- this is the centered content -->
+              <div class="columnFlexItem columnFlexItemVTop ">
+                <div>
+                  <h2 class="city-name"> Find good primary care </h2>
+                  <p>Our network of providers are here where, when, and how you need us with more than 650 locations across Northern California.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="anchorRow">
+        <div class="anchorTarget" id="mapAnchor"></div>
+      </div>
+      <!-- Map Section -->
+      <div class="container hidden-xs  ">
+        <!-- map section -->
+        <div id="map-section" class="section-gray-bg clearfix">
+          <div id="map1" class="mapDisplay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel -->
+    <div class="container-fluid carouselBackground marginBottomHalf">
+      <div class="container">
+        <div id="client-slider" aria-describedby="loading-indicator" class="owl-carousel owl-theme drRow ">
+        </div>
+        <div id="no-results" style="display: none;">
+          There are no available doctors in your area.
+        </div>
+        <div class="anchorRow">
+          <div class="anchorTarget" id="searchZipAnchor"></div>
+        </div>
+        <div class="locationControl">
+          <label for="zip-input">Search by zip code:</label>
+          <br />
+          <input id="zip-input" placeholder=" Zip code" type="text" />
+          <button id="change-zip" aria-controls="zip-input" class="btn custom-btn btnPrimaryOrange">
+            Go
+            <img id="loading-indicator" alt="loading indicator" role="progressbar" aria-busy="false" src="assets/images/icons/ajax-loader-trans.gif" />
+          </button>
+          <div id="zip-error-message" style="display: none;">
+            Please enter a valid 5-digit zip code.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Column width photo -->
+    <div class="container marginBottomHalf">
+      <img src="assets/images/content/secondary-photo.jpg" alt="Three multigenerational, multiethnic women smiling and laughing" width="1170" height="329" class="  img-responsive">
+    </div>
+    <!-- Excellent Care -->
+    <div class="marginBottomHalf">
+      <div class="container  serviceList fatPad">
+        <!-- flex row -->
+        <div class=" rowFlex ">
+          <div class="arrowBkgnd col-md-7-flex">
+            <div class="columnFlex  ">
+              <!-- this picks which version of the  flexItem gets used -->
+              <!-- this is the bottom aligned CTAs -->
+              <div class="columnFlexItem columnFlexItemVCenter ">
+                <div>
+                  <h3 class=""> Excellent care near you </h3>
+                  <p>Extraordinary people deserve extraordinary care. Sutter Health was named among the Top 5 Large Health Systems in the U.S. by Truven Health Analytics.</p>
+                </div>
+                <!-- this inserts the CTAs -->
+              </div>
+            </div>
+          </div>
+          <div class="darkGrey col-md-5-flex">
+            <div class="columnFlex  ">
+              <!-- this picks which version of the  flexItem gets used -->
+              <!-- this is the centered content -->
+              <div class="columnFlexItem columnFlexItemVTop ">
+                <div>
+                  <h4 class=""> Primary care doctors offer treatment for: </h4>
+                  <p>Allergies
+                    <br />Colds and flu
+                    <br />Physicals and annual exams</p>
+                </div>
+              </div>
+              <div class="columnFlexItem columnFlexItemVBottom">
+                <div class="  rowFlex rowFlexMultiCTA ">
+                  <div class="columnFlexItem flexMultCTA">
+                    <div class="serviceLineWrap">
+                      <a href="#" class="btn custom-btn btnSecondaryWhite find-your-doctor-link" tabindex="0" target="_blank">
+                        Find Your Doctor
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Full Width Expand Module-->
+      <div class="container accordion serviceListAccordian hidden-xs hidden-sm  ">
+        <div class="row">
+          <!-- header content here -->
+          <div class="col-md-12">
+            <div class="panel-group" id="testAccordion1" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <!-- accordion heading -->
+                <div class="panel-heading" role="tab" id="fred1">
+                  <div class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#testAccordion1" href="#fred3" aria-expanded="false" aria-controls="fred3" class="flexCenter collapsed">
+                      <div class="headingTrigger textCenter">
+                        <div class="   ">
+                          <div>
+                            <p>View Complete List of Services</p>
+                          </div>
+                        </div>
+                        <div class=" accordionState  ">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- accordion content -->
+                <div id="fred3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="fred1">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul>
+                          <li>Primary care</li>
+                          <li>Office-based procedures and surgery</li>
+                          <li>Care of chronic medical problems, including diabetes, high blood pressure, heart disease and arthritis</li>
+                          <li>Men's and women's health care</li>
+                          <li>Preventive care</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul>
+                          <li>Prenatal, newborn and well-child care</li>
+                          <li>Vaccinations and immunizations</li>
+                          <li>Sports physicals and DMV exams</li>
+                          <li>School and general physical exams</li>
+                        </ul>
+                        <div class="textCenter"> <a href="#" class="btn custom-btn btnSecondaryWhite find-your-doctor-link" tabindex="0" target="_blank">Find Your Doctor</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Patient stories -->
+    <div class="anchorRow">
+      <div class="anchorTarget" id="patientStoriesAnchor"></div>
+    </div>
+    <div class="container marginBottomHalf patientStories">
+      <!-- flex row -->
+      <div class=" rowFlex ">
+        <div class=" col-md-6-flex">
+          <div class="columnFlex      noPad    ">
+            <!-- this picks which version of the  flexItem gets used -->
+            <!-- this is the centered content -->
+            <div class="columnFlexItem columnFlexItemVTop ">
+              <a href="https://www.youtube.com/embed/5elzxO6L9Po" class="venobox vbox-item hidden-xs hidden-sm" data-autoplay="true" data-vbtype="youtube" target="_blank">
+                <img src="assets/images/content/linda.jpg" alt="Picture of Livia smiling and holding a guitar" width="570" height="369" class="  img-responsive"> </a>
+              <a href="https://www.youtube.com/embed/5elzxO6L9Po" class="venobox vbox-item hidden-md hidden-lg" data-autoplay="true" data-vbtype="youtube" target="_blank">
+                <img src="assets/images/content/linda-mobile.jpg" alt="Picture of Livia smiling and holding a guitar resized for mobile" width="1166" height="783" class="  img-responsive"> </a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-6-flex fatPad">
+          <div class="columnFlex bkgndColorWhite ">
+            <!-- this picks which version of the  flexItem gets used -->
+            <!-- this is the bottom aligned CTAs -->
+            <div class="columnFlexItem columnFlexItemVCenter ">
+              <div>
+                <h3 class=""> Personalized care for women </h3>
+                <p>Watch Livia’s amazing story and see how Sutter strives to provide the best health care for women.</p>
+              </div>
+              <!-- this inserts the CTAs -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service line -->
+    <div class="anchorRow">
+      <div class="anchorTarget" id="serviceLinesAnchor"></div>
+    </div>
+    <div id="serviceLines" class="">
+      <div class="container  practiceType ">
+        <!-- flex row -->
+        <div class=" rowFlex hidden-xs hidden-sm">
+          <div class=" col-md-4-flex col-sm-12-flex bkgndColorWhite textCenter fatPad">
+            <img src="assets/images/content/family-medicine.jpg" alt="Mother carrying daughter piggyback" width="380" height="342" class=" hidden-xs  antiPad img-responsive">
+            <img src="assets/images/content/family-medicine-mobile.jpg" alt="Mother carrying daughter piggyback resized for mobile" width="725" height="342" class=" hidden-sm hidden-md hidden-lg antiPad img-responsive">
+            <div class="columnFlex  ">
+              <!-- this picks which version of the  flexItem gets used -->
+              <!-- this is the centered content -->
+              <div class="columnFlexItem columnFlexItemVTop ">
+                <div class="serviceLineWrap">
+                  <div>
+                    <h4 class=""> Family Medicine </h4>
+                    <p>Comprehensive pediatric, adolescent and adult primary care.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="columnFlexItem columnFlexItemVBottom">
+                <div class="  rowFlex rowFlexMultiCTA ">
+                  <div class="columnFlexItem flexMultCTA">
+                    <div class="serviceLineWrap">
+                      <a href="http://www.sutterhealth.org/providersearch/?vs=results&amp;sp=2&amp;action=provSearch&amp;sitecfg=75&amp;tmpsubspec=&amp;ziprequired=0&amp;hidehplan=1&amp;primSpec=1109&amp;wtspecialty=Family+Medicine&amp;wtnonphysspecialty=&amp;st=&amp;zip=&amp;miles=10&amp;wtonline=no&amp;gender=0&amp;medgrp=0&amp;wtmedgrp=No+preference&amp;hospital=0&amp;wthospital=&amp;miscaffl=0&amp;language=0" class="btn custom-btn btnSecondaryWhite family-doctor-link" tabindex="0" target="_blank">
+                                Find a Family Doctor
+                              </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-4-flex col-sm-12-flex bkgndColorWhite textCenter fatPad">
+            <img src="assets/images/content/primary-care.jpg" alt="Man kissing woman on cheek" width="380" height="342" class=" hidden-xs  antiPad img-responsive">
+            <img src="assets/images/content/primary-care-mobile.jpg" alt="Man kissing woman on cheek resized for mobile" width="725" height="342" class=" hidden-sm hidden-md hidden-lg antiPad img-responsive">
+            <div class="columnFlex  ">
+              <!-- this picks which version of the  flexItem gets used -->
+              <!-- this is the centered content -->
+              <div class="columnFlexItem columnFlexItemVTop ">
+                <div class="serviceLineWrap">
+                  <div>
+                    <h4 class=""> Internal Medicine </h4>
+                    <p>Preventative care, non-surgical medical treatments and more for adults. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="columnFlexItem columnFlexItemVBottom">
+                <div class="  rowFlex rowFlexMultiCTA ">
+                  <div class="columnFlexItem flexMultCTA">
+                    <div class="serviceLineWrap">
+                      <a href="http://www.sutterhealth.org/findadoctor/index.html" class="btn custom-btn btnSecondaryWhite internal-med-link" tabindex="0" target="_blank">
+                                Find an Internal Medicine Doctor 
+                              </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-4-flex col-sm-12-flex bkgndColorWhite textCenter fatPad">
+            <img src="assets/images/content/pediatrics.jpg" alt="Two children, sitting and holding their face in their hands and smiling" width="380" height="342" class=" hidden-xs  antiPad img-responsive">
+            <img src="assets/images/content/pediatrics-mobile.jpg" alt="Two children, sitting and holding their face in their hands and smiling mobile" width="725" height="342" class=" hidden-sm hidden-md hidden-lg antiPad img-responsive">
+            <div class="columnFlex  ">
+              <!-- this picks which version of the  flexItem gets used -->
+              <!-- this is the centered content -->
+              <div class="columnFlexItem columnFlexItemVTop ">
+                <div class="serviceLineWrap">
+                  <div>
+                    <h4 class=""> Pediatrics </h4>
+                    <p>Newborn care, well-child visits, vaccinations and more for your children.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="columnFlexItem columnFlexItemVBottom">
+                <div class="  rowFlex rowFlexMultiCTA ">
+                  <div class="columnFlexItem flexMultCTA">
+                    <div class="serviceLineWrap">
+                      <a href="#" class="btn custom-btn btnSecondaryWhite pediatrician-link" tabindex="0" target="_blank">
+                                Find a Pediatrician
+                              </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- THIS IS THE 2 COL LAYOUT -->
+        <!-- flex row -->
+        <div class=" rowFlex hidden-md hidden-lg">
+          <div class=" col-md-4-flex col-sm-12-flex bkgndColorWhite textCenter fatPad">
+            <div class=" rowFlex  ">
+              <!-- this is bottom aligned -->
+              <div class="  col-sm-5-flex">
+                <img src="assets/images/content/family-medicine.jpg" alt="Mother carrying daughter piggyback" width="380" height="342" class=" hidden-xs  antiPad img-responsive">
+                <img src="assets/images/content/family-medicine-mobile.jpg" alt="Mother carrying daughter piggyback resized for mobile" width="725" height="342" class=" hidden-sm hidden-md hidden-lg antiPad img-responsive">
+              </div>
+              <div class="columnFlexItemVCenter col-sm-7-flex">
+                <div class="serviceLineWrap">
+                  <div>
+                    <h4 class=""> Family Medicine </h4>
+                    <p>Comprehensive pediatric, adolescent and adult primary care.</p>
+                  </div>
+                </div>
+                <div class="  rowFlex rowFlexMultiCTA ">
+                  <div class="columnFlexItem flexMultCTA">
+                    <div class="serviceLineWrap">
+                      <a href="http://www.sutterhealth.org/providersearch/?vs=results&amp;sp=2&amp;action=provSearch&amp;sitecfg=75&amp;tmpsubspec=&amp;ziprequired=0&amp;hidehplan=1&amp;primSpec=1109&amp;wtspecialty=Family+Medicine&amp;wtnonphysspecialty=&amp;st=&amp;zip=&amp;miles=10&amp;wtonline=no&amp;gender=0&amp;medgrp=0&amp;wtmedgrp=No+preference&amp;hospital=0&amp;wthospital=&amp;miscaffl=0&amp;language=0" class="btn custom-btn btnSecondaryWhite family-doctor-link" tabindex="0" target="_blank">
+                            Find a Family Doctor
+                          </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-4-flex col-sm-12-flex bkgndColorWhite textCenter fatPad">
+            <div class=" rowFlex  ">
+              <!-- this is bottom aligned -->
+              <div class="  col-sm-5-flex">
+                <img src="assets/images/content/primary-care.jpg" alt="Man kissing woman on cheek" width="380" height="342" class=" hidden-xs  antiPad img-responsive">
+                <img src="assets/images/content/primary-care-mobile.jpg" alt="Man kissing woman on cheek resized for mobile" width="725" height="342" class=" hidden-sm hidden-md hidden-lg antiPad img-responsive">
+              </div>
+              <div class="columnFlexItemVCenter col-sm-7-flex">
+                <div class="serviceLineWrap">
+                  <div>
+                    <h4 class=""> Internal Medicine </h4>
+                    <p>Preventative care, non-surgical medical treatments and more for adults. </p>
+                  </div>
+                </div>
+                <div class="  rowFlex rowFlexMultiCTA ">
+                  <div class="columnFlexItem flexMultCTA">
+                    <div class="serviceLineWrap">
+                      <a href="http://www.sutterhealth.org/findadoctor/index.html" class="btn custom-btn btnSecondaryWhite internal-med-link" tabindex="0" target="_blank">
+                            Find an Internal Medicine Doctor 
+                          </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-4-flex col-sm-12-flex bkgndColorWhite textCenter fatPad">
+            <div class=" rowFlex  ">
+              <!-- this is bottom aligned -->
+              <div class="  col-sm-5-flex">
+                <img src="assets/images/content/pediatrics.jpg" alt="Two children, sitting and holding their face in their hands and smiling" width="380" height="342" class=" hidden-xs  antiPad img-responsive">
+                <img src="assets/images/content/pediatrics-mobile.jpg" alt="Two children, sitting and holding their face in their hands and smiling mobile" width="725" height="342" class=" hidden-sm hidden-md hidden-lg antiPad img-responsive">
+              </div>
+              <div class="columnFlexItemVCenter col-sm-7-flex">
+                <div class="serviceLineWrap">
+                  <div>
+                    <h4 class=""> Pediatrics </h4>
+                    <p>Newborn care, well-child visits, vaccinations and more for your children.</p>
+                  </div>
+                </div>
+                <div class="  rowFlex rowFlexMultiCTA ">
+                  <div class="columnFlexItem flexMultCTA">
+                    <div class="serviceLineWrap">
+                      <a href="#" class="btn custom-btn btnSecondaryWhite pediatrician-link" tabindex="0" target="_blank">
+                            Find a Pediatrician
+                          </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Full Width Expand Module-->
+      <div class="container accordion practiceTypeAccordion hidden-xs hidden-sm  ">
+        <div class="row">
+          <!-- header content here -->
+          <div class="col-md-12">
+            <div class="panel-group" id="testAccordion2" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <!-- accordion heading -->
+                <div class="panel-heading" role="tab" id="fred4">
+                  <div class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#testAccordion2" href="#fred6" aria-expanded="false" aria-controls="fred6" class="flexCenter collapsed">
+                      <div class="headingTrigger textCenter">
+                        <div class="   ">
+                          <div>
+                            <p>Which Primary Care Specialty is Right for Me?</p>
+                          </div>
+                        </div>
+                        <div class=" accordionState  ">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- accordion content -->
+                <div id="fred6" class="panel-collapse collapse " role="tabpanel" aria-labelledby="fred4">
+                  <div class="panel-body">
+                    <div class="rowFlex">
+                      <div class="col-md-4-flex">
+                        <p>A family doctor provides care for people of all ages. See below for the range of services Sutter’s family doctors provide:</p>
+                        <ul>
+                          <li>Breast exams and screening tests</li>
+                          <li>Care for diabetes, high blood pressure, heart disease, arthritis and other conditions</li>
+                          <li>Prenatal, newborn and well-child care</li>
+                          <li>Preventive care</li>
+                          <li>Primary medical care</li>
+                          <li>Vaccinations and immunizations</li>
+                          <li>School and general physical exams</li>
+                          <li>Sports physicals and DMV exams</li>
+                          <li>Women's health exams</li>
+                        </ul>
+                        <div class="textCenter"> <a href="http://www.sutterhealth.org/providersearch/?vs=results&sp=2&action=provSearch&sitecfg=75&tmpsubspec=&ziprequired=0&hidehplan=1&primSpec=1109&wtspecialty=Family+Medicine&wtnonphysspecialty=&st=&zip=&miles=10&wtonline=no&gender=0&medgrp=0&wtmedgrp=No+preference&hospital=0&wthospital=&miscaffl=0&language=0" class="btn custom-btn btnSecondaryWhite family-doctor-link" tabindex="0" target="_blank">Find a Family Doctor</a> </div>
+                      </div>
+                      <div class="col-md-4-flex">
+                        <p>No matter your age, you want a compassionate doctor who can guide you to better health. Internal Medicine doctors provide a wide range of services that offer just that: </p>
+                        <ul>
+                          <li>Cardiovascular and pulmonary condition care</li>
+                          <li>Geriatric care of the elderly</li>
+                          <li>Long-term comprehensive care</li>
+                          <li>Men's and women's health care</li>
+                          <li>Mental health evaluations</li>
+                          <li>Physical exams and evaluations</li>
+                          <li>Preventive medicine and wellness care</li>
+                          <li>Sleep disorders and sleep therapy</li>
+                          <li>Sports physicals</li>
+                          <li>Treatment and care of chronic and infectious diseases</li>
+                        </ul>
+                        <div class="textCenter"><a href="http://www.sutterhealth.org/providersearch/?vs=results&sp=2&action=provSearch&sitecfg=75&tmpsubspec=&ziprequired=0&hidehplan=1&primSpec=1110&wtspecialty=Internal+Medicine&wtnonphysspecialty=&st=&zip=&miles=10&wtonline=no&gender=0&medgrp=0&wtmedgrp=No+preference&hospital=0&wthospital=&miscaffl=0&language=0" class="btn custom-btn btnSecondaryWhite internal-med-link" tabindex="0" target="_blank">Find an Internal Medicine Doctor</a></div>
+                      </div>
+                      <div class="col-md-4-flex">
+                        <p>Infancy, childhood and adolescence are exciting years. At Sutter, you'll find pediatric care teams dedicated to helping your child stay healthy through every milestone:</p>
+                        <ul>
+                          <li>Adolescent and sports physical exams</li>
+                          <li>Childhood immunizations</li>
+                          <li>Diagnosis and treatment of acute and chronic diseases</li>
+                          <li>Developmental screening</li>
+                          <li>Hearing and vision screening</li>
+                          <li>Newborn care</li>
+                          <li>Nutritional counseling</li>
+                          <li>Preschool and school physical examinations</li>
+                          <li>Treatment for illnesses and minor accidents</li>
+                          <li>Well-child exams</li>
+                        </ul>
+                        <h5 class="subhead" style="margin-top: 0px;"><strong>Pediatric Subspecialty Areas:</strong></h5>
+                        <ul>
+                          <li>Cardiology</li>
+                          <li>Critical Care</li>
+                          <li>Developmental evaluation and treatment</li>
+                          <li>Endocrinology and diabetes</li>
+                          <li>Gastroenterology</li>
+                        </ul>
+                        <div class="textCenter"><a href="http://www.sutterhealth.org/providersearch/?vs=results&sp=2&action=provSearch&sitecfg=75&tmpsubspec=&ziprequired=0&hidehplan=1&primSpec=1111&wtspecialty=Pediatrics&wtnonphysspecialty=&st=&zip=&miles=10&wtonline=no&gender=0&medgrp=0&wtmedgrp=No+preference&hospital=0&wthospital=&miscaffl=0&language=0" class="btn custom-btn btnSecondaryWhite pediatrician-link" tabindex="0" target="_blank">Find a Pediatrician</a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="feature" class="feature mini-height follow">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+          </div>
+          <div class="col-lg-12">
+            <h3 class="feature-title">Follow us on Social</h3>
+            <div class="col-sm-6 col-lg-2 col-xs-2 text-center hidden-xs hidden-sm hidden-md"></div>
+            <div class="col-sm-3 col-xs-3 col-lg-2 element-from-top text-center" style="opacity: 1; top: 0px;">
+              <a target="_blank" href="https://www.facebook.com/SutterHealth" class="">
+                <img src="assets/images/icons/social/Facebook.png" alt="faceboook">
+              </a>
+            </div>
+            <div class="col-sm-3 col-xs-3 col-lg-2 element-from-top text-center" style="opacity: 1; top: 0px;">
+              <a target="_blank" href="https://www.twitter.com/SutterHealth" class="">
+                <img src="assets/images/icons/social/Twitter.png" alt="twitter">
+              </a>
+            </div>
+            <div class="col-sm-3 col-xs-3 col-lg-2 element-from-top text-center" style="opacity: 1; top: 0px;">
+              <a target="_blank" href="https://www.youtube.com/SutterHealth" class="">
+                <img src="assets/images/icons/social/Youtube.png" alt="youtube">
+              </a>
+            </div>
+            <div class="col-sm-3 col-xs-3 col-lg-2 element-from-top text-center" style="opacity: 1; top: 0px;">
+              <a target="_blank" href="https://www.instagram.com/SutterHealth" class="">
+                <img src="assets/images/icons/social/Instagram.png" alt="instagram">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-2 text-center hidden-xs hidden-sm hidden-md"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside id="footer-sidebar">
+      <div class="container">
+        <div class="row">
+          <div class="footer-sidebar-weightloss">
+            <div class="col-xs-10 col-md-12 col-lg-12 col-md-offset-1 col-xs-offset-1 col-lg-offset-1 element-from-left" style="opacity: 1; left: 0px;">
+              <div class="row"></div>
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="http://www.sutterhealth.org/about/">About the Sutter Health Network</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="http://www.sutterhealth.org/thedoctorforyou/about_doctors.html">About Doctors on This Site</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="http://www.sutterhealth.org/contact/">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="http://www.sutterhealth.org/policy/">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-2">
+                <a href="http://www.sutterhealth.org/accessibility_footer.html">Accessibility</a>
+              </div>
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer id="footer-section" class="footer-section clearfix">
+      <div class="copyrights">
+        © 2017 Sutter Health. All Rights Reserved. Sutter Health is a registered Trademark of Sutter Health™, Reg. U.S. Patent and Trademark office
+      </div>
+    </footer>
+    <!-- API is registered with my personal key, need to change for production -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCene4S_0bzH93ieu7KFLs9_Y9Niz3yca4"></script>
+    <script src="assets/js/bundle.min.js"></script>
+  </body>
+</html>
